@@ -11,31 +11,59 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
 #right-ear {
-	transform: translateY(0);
-	transition: all .2s linear;
-	transform-origin: top;
+  transform: translateY(0);
+  transition: all .2s linear;
+  transform-origin: top;
 }
+
 #bear:hover #right-ear {
-	transform: translateY(-10px);
-	transform-origin: top;
+  transform: translateY(-10px);
+  transform-origin: top;
 }
+
 #left-ear {
-	transform: translateY(0);
-	transition: all .2s linear;
-	transform-origin: top;
+  transform: translateY(0);
+  transition: all .2s linear;
+  transform-origin: top;
 }
+
 #bear:hover #left-ear {
-	transform: translateY(-10px);
-	transform-origin: top;
+  transform: translateY(-10px);
+  transform-origin: top;
 }
+
 .eyes {
-	animation: slide 1s infinite alternate;
-	transform: translateY(0);
+  animation: slide 1s infinite alternate;
+  transform: translateY(0);
 }
+
+.st0 {
+  fill: #673200;
+}
+
+.st1 {
+  fill: #ffaaca;
+}
+
+.st2 {
+  fill: #c65b00;
+}
+
+.st3 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
 @keyframes slide {
 
   0% { transform: translate(-20px); }
